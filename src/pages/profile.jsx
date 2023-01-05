@@ -33,7 +33,7 @@ export default function ProfilePage() {
     };
 
     const response = await axios
-      .put(`${process.env.REACT_APP_DOMAIN}/user/update`, dataSent, { headers })
+      .put(`${process.env.REACT_APP_URL}/user/update`, dataSent, { headers })
       .catch((error) => console.error("There was an error!", error));
 
     return response;

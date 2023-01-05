@@ -95,7 +95,7 @@ export default function PresentationViewPage(props) {
 
     const response = await axios
       .get(
-        `${process.env.REACT_APP_DOMAIN}/slide/list?presentationId=${presentationID}`,
+        `${process.env.REACT_APP_URL}/slide/list?presentationId=${presentationID}`,
         {
           headers
         }

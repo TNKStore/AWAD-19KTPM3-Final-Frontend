@@ -24,7 +24,7 @@ export default function InvitePage() {
     const data = {};
 
     const response = await axios
-      .post(`${process.env.REACT_APP_DOMAIN}/group/invite`, data, {
+      .post(`${process.env.REACT_APP_URL}/group/invite`, data, {
         headers,
         params: { group, invitationString }
       })

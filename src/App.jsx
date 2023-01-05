@@ -40,7 +40,7 @@ function App() {
       if (!user) return;
 
       if (!socket) {
-        const newSocket = io(process.env.REACT_APP_DOMAIN, {
+        const newSocket = io(process.env.REACT_APP_URL, {
           extraHeaders: {
             token
           }

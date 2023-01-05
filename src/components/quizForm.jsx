@@ -61,7 +61,7 @@ export default function QuizForm(props) {
     console.log(dataSent);
 
     const response = await axios
-      .post(`${process.env.REACT_APP_DOMAIN}/slide/update`, dataSent, {
+      .post(`${process.env.REACT_APP_URL}/slide/update`, dataSent, {
         headers
       })
       .catch((error) => console.error("There was an error!", error));
@@ -87,7 +87,7 @@ export default function QuizForm(props) {
     console.log(dataSent);
 
     const response = await axios
-      .post(`${process.env.REACT_APP_DOMAIN}/slide/update-option`, dataSent, {
+      .post(`${process.env.REACT_APP_URL}/slide/update-option`, dataSent, {
         headers
       })
       .catch((error) => console.error("There was an error!", error));

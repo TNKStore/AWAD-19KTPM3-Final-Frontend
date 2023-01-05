@@ -47,7 +47,7 @@ export default function PresentationCollaboratePage() {
 
     const response = await axios
       .get(
-        `${process.env.REACT_APP_DOMAIN}/presentation/${presentationID}/collaborator`,
+        `${process.env.REACT_APP_URL}/presentation/${presentationID}/collaborator`,
         {
           headers
         }
@@ -69,7 +69,7 @@ export default function PresentationCollaboratePage() {
 
     const response = await axios
       .post(
-        `${process.env.REACT_APP_DOMAIN}/presentation/add-collaborator`,
+        `${process.env.REACT_APP_URL}/presentation/add-collaborator`,
         data,
         {
           headers
@@ -91,7 +91,7 @@ export default function PresentationCollaboratePage() {
     };
 
     const response = await axios
-      .post(`${process.env.REACT_APP_DOMAIN}/collaborator/remove`, data, {
+      .post(`${process.env.REACT_APP_URL}/collaborator/remove`, data, {
         headers
       })
       .catch((error) => console.error("There was an error!", error));

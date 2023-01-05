@@ -45,7 +45,7 @@ export default function PresentationsPage() {
     };
 
     const response = await axios
-      .get(`${process.env.REACT_APP_DOMAIN}/presentation/list`, { headers })
+      .get(`${process.env.REACT_APP_URL}/presentation/list`, { headers })
       .catch((error) => console.error("There was an error!", error));
 
     console.log(response);
@@ -62,7 +62,7 @@ export default function PresentationsPage() {
     };
 
     const response = await axios
-      .post(`${process.env.REACT_APP_DOMAIN}/presentation/create`, data, {
+      .post(`${process.env.REACT_APP_URL}/presentation/create`, data, {
         headers
       })
       .catch((error) => console.error("There was an error!", error));
@@ -77,7 +77,7 @@ export default function PresentationsPage() {
     };
 
     const response = await axios
-      .delete(`${process.env.REACT_APP_DOMAIN}/presentation/${id}`, {
+      .delete(`${process.env.REACT_APP_URL}/presentation/${id}`, {
         headers
       })
       .catch((error) => console.error("There was an error!", error));

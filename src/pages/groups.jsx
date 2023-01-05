@@ -44,7 +44,7 @@ export default function GroupsPage() {
     };
 
     const response = await axios
-      .get(`${process.env.REACT_APP_DOMAIN}/group/list`, { headers })
+      .get(`${process.env.REACT_APP_URL}/group/list`, { headers })
       .catch((error) => console.error("There was an error!", error));
 
     return response;
@@ -60,7 +60,7 @@ export default function GroupsPage() {
     };
 
     const response = await axios
-      .post(`${process.env.REACT_APP_DOMAIN}/group/create`, data, { headers })
+      .post(`${process.env.REACT_APP_URL}/group/create`, data, { headers })
       .catch((error) => console.error("There was an error!", error));
 
     return response;
@@ -72,7 +72,7 @@ export default function GroupsPage() {
     };
 
     const response = await axios
-      .delete(`${process.env.REACT_APP_DOMAIN}/group/${id}`, { headers })
+      .delete(`${process.env.REACT_APP_URL}/group/${id}`, { headers })
       .catch((error) => console.error("There was an error!", error));
 
     return response;

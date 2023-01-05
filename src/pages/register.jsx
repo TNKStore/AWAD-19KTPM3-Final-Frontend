@@ -28,7 +28,7 @@ export default function RegisterPage() {
     };
 
     const response = await axios
-      .post(`${process.env.REACT_APP_DOMAIN}/signup`, dataSent)
+      .post(`${process.env.REACT_APP_URL}/signup`, dataSent)
       .catch((error) => console.error("There was an error!", error));
 
     return response;
