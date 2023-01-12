@@ -292,7 +292,7 @@ export default function GroupDetail() {
           alignItems="center"
           justifyContent="center"
           flexDirection="column"
-          width="1000px"
+          width="1200px"
           height="300px"
         >
           <Typography>
