@@ -276,7 +276,7 @@ export default function PresentationDetailPage(props) {
   function PresentationBar() {
     const content = isPresenting
       ? "Presenting..."
-      : `Viewer link: ${process.env.URL}/presentations/view?id=${presentationID}`;
+      : `Viewer link: ${process.env.REACT_APP_SITE}/presentations/view?id=${presentationID}`;
 
     const handleBack = () => {
       navigate(-1);
